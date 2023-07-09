@@ -27,35 +27,54 @@
 
         <hr>
         <h2>Form 2</h2>
-        <form action="">
-            <div class="mb-3">
+        <form class="row-4">
+            <div class="mb-3 col-4">
                 <label class="form-label" for="firstName">First Name</label>
                 <input class="form-control" type="text" id="firstName" placeholder="Tim">
             </div>
-            <div class="mb-3">
+
+            <div class="mb-3 col-4">
                 <label class="form-label" for="lastName">Plain Text</label>
                 <input class="form-control-plaintext" type="text" id="lastName" placeholder="Corey" value="Corey">
             </div>
-            <div class="mb-3">
+
+            <div class="mb-3 col-4">
                 <label class="form-label" for="lastName">Disabled</label>
                 <input class="form-control" type="text" id="lastName" placeholder="Disabled Text" value="Disabled Text" disabled>
             </div>
-            <div class="mb-3">
+
+            <div class="mb-3 col-4">
                 <label class="form-label" for="firstName">Read Only</label>
                 <input class="form-control" type="text" id="firstName" placeholder="Read Only" value="Read Only" readonly>
             </div>
-            <div class="mb-3 form-floating">
+
+            <div class="mb-3 form-floating col-4">
                 <input class="form-control" type="text" id="firstName" placeholder="Tim">
                 <label for="firstName">First Name</label>
             </div>
-            <div class="form-floating mb-3">
+
+            <div class="form-floating mb-3 col-4">
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                 <label for="floatingInput">Email address</label>
             </div>
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+
+            <div class="mb-3 col-4">
+                <label for="email" class="form-label">Email address</label>
+                <div class="input-group">
+                    <input class="form-control" type="text" id="email" placeholder="Email">
+                    <span class="input-group-text">@acme.com</span>
+                </div>
             </div>
+
+            <div class="mb-3 col-4">
+                <label for="cashBalance" class="form-label">Cash Balance</label>
+                <div class="input-group">
+                    <span class="input-group-text">$</span>
+                    <input class="form-control" type="text" id="cashBalance" placeholder="0">
+                    <span class="input-group-text">.00</span>
+                </div>
+            </div>
+
             <button class="btn btn-primary" type="submit">Submit</button>
         </form>
     </div>
