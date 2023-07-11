@@ -85,26 +85,52 @@
         <br>
         <h2>Form 3</h2>
         <form class="row">
+
             <div class="mb-3">
                 <label for="firstName" class="form-label">First Name</label>
                 <input class="form-control" type="text" id="firstName" placeholder="Tim">
             </div>
+
             <div class="mb-3">
                 <label for="textarea1" class="form-label">Text Area</label>
                 <textarea class="form-control" id="textarea1" rows="4"></textarea>
             </div>
+
             <div class="mb-3">
                 <label for="file1" class="form-label">File Picker (single)</label>
                 <input class="form-control" type="file" id="file1" >
             </div>
+
             <div class="mb-3">
                 <label for="file2" class="form-label">File Picker (multiple)</label>
                 <input class="form-control" type="file" id="file2" multiple>
             </div>
+
             <div class="mb-3">
                 <label for="color1" class="form-label">Color Picker</label>
-                <input class="form-control form-control-color" type="color" id="color1">
+                <input class="form-control form-control-color" type="color" id="color1" value="#e31836">
             </div>
+
+            <div class="mb-3">
+                <label for="datalist1" class="form-label">List Options</label>
+                <input class="form-control" type="text" id="datalist1" list="animalOptions">
+                <datalist id="animalOptions">
+                    <option value="Squirrel"></option>
+                    <option value="Bear"></option>
+                    <option value="Dog"></option>
+                </datalist>
+            </div>
+
+            <div class="mb-3">
+                <label for="dropdown1" class="form-label">Drop Down</label>
+                <select class="form-select" id="dropdown1">
+                    <option selected>Select an Option...</option>
+                    <option value="a">Apple</option>
+                    <option value="b">Banana</option>
+                    <option value="c">Carrot</option>
+                </select>
+            </div>
+
             <button class="btn btn-primary" type="submit">Submit</button>
         </form>
 
